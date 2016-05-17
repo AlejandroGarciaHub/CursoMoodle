@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
-get '/elearning' => 'pages#elearning'
-get '/moodle' => 'pages#moodle'
+HighVoltage.configure do |config|
+  config.content_path = 'doc/'
+end
+
+get '/elearning' => 'doc#elearning', :path => "elearning"
+get '/moodle' => 'doc#moodle'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
