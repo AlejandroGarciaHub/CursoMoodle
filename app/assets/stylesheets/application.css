@@ -565,7 +565,7 @@ header .intro-text .skills {
   outline: none;
 }
 .navbar-default,
-.navbar-inverse! {
+.navbar-inverse {
   border: none;
 }
 section {
