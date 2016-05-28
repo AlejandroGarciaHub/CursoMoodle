@@ -1,0 +1,49 @@
+<div class="row center-xs" style="margin-top:90px;">
+  <div class="col-xs-8 com-md-6">
+    <div class="box">
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :username,"Usuario" %><br />
+    <%= f.text_field :username, autofocus: true, class:"log-form-controll" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, class:"log-form-controll" %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Actualmente esperando confirmacion para: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :password, "Nueva contraseña" %> <br/><i>(deja tal como está si no quieres cambiarla)</i><br />
+    <%= f.password_field :password, autocomplete: "off", class:"log-form-controll" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation, "Confirmacion de contraseña" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off", class:"log-form-controll" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :current_password, "Contraseña actual" %> <br/><i>(necesitamos la contraseña actual para confirmar tus cambios)</i><br />
+    <%= f.password_field :current_password, autocomplete: "off", class:"log-form-controll" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Actualizar", class:"btn green cream margin-right" %>
+    <%= link_to "Volver", :back, class:"btn orange white" %>
+  </div>
+<% end %>
+<p></p>
+<p>¿Inconforme? <%= button_to "Cancelar mi cuenta", registration_path(resource_name), data: { confirm: "¿Estás seguro?" }, method: :delete %></p>
+
+  </div>
+    </div>
+      </div>
+      <%= render "partials/footer_above" %>

@@ -17,3 +17,52 @@
 //= require bootstrap.min
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+$(document).on('page:change',function() {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+
+   $(".enlace a").click(function(){
+        $(this).tab('show');
+    });
+
+  $('li').hover(function(){
+      $(this).children('ul').stop().slideToggle(400);
+  });
+
+});
+
+
+
+
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under the MIT license
+ */
+

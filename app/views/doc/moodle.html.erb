@@ -1,0 +1,381 @@
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="top:100px;" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav enlace">
+                <li class="sidebar-brand">
+                    <a >
+                       DOCS
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#sugerencias">Sugerencias</a>
+                </li>
+                <li>
+                    <a href="#guia-profesor">Guia Profesor</a>
+                </li>
+                <li>
+                    <a href="#guia-admin">Guia Administrador</a>
+                </li>
+                <li>
+                    <a href="#guia-instalacion">Guia instalacion</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestionar curso <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Menu</li>
+                    <li><a href="#estudiantes">Añadir estudiantes</a></li>
+                    <li><a href="#monitorear">Monitorear</a></li>
+                    <li><a href="#subir">Subir archivos</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="https://moodle.org/?lang=es" target="_blank">Sitio Oficial</a>
+                </li>
+            </ul>
+        </nav>        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+
+            <div class="container" style="margin-top:80px;">
+            <div class="tab-content">
+                <div id="sugerencias" class="tab-pane fade active in">                    
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1 class="title-doc">Sugerencias para principiantes</h1>
+
+                        <h3>Tenga su propio curso</h3>
+                        <p>Usted puede gestionar su propio curso Moodle gratuitamente en alguno de los sitios enlistados en Moodle gratuito.</p>  
+                        <p> Si tiene los recursos para financiarlo, puede tener sus cursos alojados profesionalmente con algún Moodle Partner (Asociado Moodle) respaldado por moodle.org .</p>
+                        
+                        <h3>Instale su propio servidor Moodle</h3>
+                        <p>Usted puede instalar localmente su propio servidor Moodle en una PC o en una Mac para familiarizarse con la plataforma, pero considere que estos paquetes no son apropiados para sitios en producción.</p>
+                        <p>La mayor flexibilidad y potencia se obtiene si Usted mismo (o preferentemente un ingeniero) instala su propio servidor en un servidor Linux (preferible), o Windows (menos recomendable).</p>
+                        <p>Usted puede gestionar su propio curso Moodle gratuitamente en alguno de los sitios enlistados en Moodle gratuito.</p>
+
+                        <h3>Actualice su plataforma instalada</h3>
+                        <p>Muchas instituciones educativas actualizan su versión de Moodle cada año.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bRKd7X9cZnk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div id="guia-profesor" class="tab-pane fade">
+                    <div class="col-lg-8 col-lg-offset-2 ">
+                        <h1 class="title-doc">Guia del Profesor</h1>
+
+                        <p>En Moodle, un profesor tiene responsabilidad sobre los materiales en su propio curso. Los profesores a menudo gestionan inscripciones (matriculaciones) y pueden cambiar el diseño de la página del curso. Esta guía rápida de inicio introduce las características de Moodle para aquellas personas con el Rol de profesor. </p>
+
+                        <h3>Configuración del curso</h3>
+                        <p>Un curso es un espacio dentro de un sitio Moodle en donde los profesores pueden añadir materiales de aprendizaje para sus estudiantes. Un profesor puede tener más de un curso y un curso puede incluir a más de un profesor y más de un grupo de estudiantes.</p>
+
+                           <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/4/41/tgcoursesetup.png/600px-tgcoursesetup.png">
+
+                        <p>Un curso puede mostrar sus materiales de varias maneras o 'formatos' ; por ejemplo en secciones semanales o secciones con (el nombre de ) temas o tópicos. Usted también puede mostrar todas las secciones al mismo tiempo o revelar solamente una a la vez.</p>
+                        
+                        <hr>
+                        
+                        <h3>Inscripción al curso</h3>
+                        <p>Antes de que un estudiante pueda acceder a su curso, primeramente debe de ser autenticado en el sitio y esto es la responsabilidad del administrador del sitio.</p>
+
+                        <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/f/fa/tgcoursenrolment.png/600px-tgcoursenrolment.png">
+
+                        <p>Existen varios Métodos de inscripción disponibles a un profesor. Una vez más, lo que está disponible depende del administrador de Moodle. El administrador podría inscribir a los alumnos dentro del curso automáticamente, o el profesor podría ser capaz de inscribir a los estudiantes desde Administración del curso > Usuarios > Usuarios inscritos .</p>
+
+                        <hr>
+
+                        <h3>Calificar</h3>
+                        <p>Cada curso en Moodle tiene su propio Libro de calificaciones que graba las puntuaciones de tareas , exámenes , talleres con evaluación por pares, lecciones con ramificaciones y recursos educativos LTI.</p>
+                        <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/1/19/tggrading.png/600px-tggrading.png">
+                        <p>Otras actividades tales como los foros, las bases de datos y los glosarios pueden tener habilitadas valoraciones, que también se verán reflejadas en el Libro de calificaciones.</p>
+
+                        <p>Los ítems de calificación pueden crearse manualmente desde Administración del curso > Calificaciones > Configuración > Categorías e ítems y también es posible importar y exportar calificaciones.</p>
+
+                        <hr>
+
+                        <h3>Monitoreo del progreso</h3>
+                        <p>Si en el sitio se ha habilitado el seguimiento de la finalización y también en Administarción del curso > Editar configuraciones, Usted puede entonces configurar condiciones para finalización en las configuraciones de la actividad. Aparecerá una casilla junto a la actividad y a un estudiante se le puede permitir o no que la active manualmente; o se mostrará una palomita (vea la imagen siguiente) una vez que se haya logrado el criterio para esa actividad particular. Esta característica puede combinarse junto con la Finalización del curso, de forma tal que cuando se hayan completado ciertas actividades, y/o se hayan obtenido ciertas calificaciones, el curso mismo se marcará como completado.</p>
+
+                        <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/0/0b/tgtracking.png/600px-tgtracking.png">
+                        <hr>
+
+                        <h3>Restricción del acceso</h3>
+                        <p>Un curso Moodle puede configurarse para que muestre todo a todos durante todo el tiempo, o podría ser muy restrictivo, mostrando ciertos ítems, a ciertas horas, a ciertos grupos, o basándose en el desempeño en tareas anteriores.</p>
+                        <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/5/54/tgrestrictaccess.png/600px-tgrestrictaccess.png">
+                        <p>Las secciones e ítems del curso pueden ocultarse manualmente usando el ícono para 'ocultar' cuando se activa la edición. Si se ha habilitado el Restringir acceso (o actividades condicionales en versiones anteriores a 3.0) por el administrador, entonces una sección para Restringir el acceso se mostrará en cada actividad y cada recurso del curso, permitiéndole a Usted elegir el cómo y cúando se revelará éste ítem; y si es que se oculta completamente, o se muestra sombreado en gris junto con la condición para acceder a él.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 col-lg-offset-2 tab-pane fade" id="guia-admin">
+                    <h1 class="title-doc">Guia del Administrador</h1>
+
+                    <h3>Configurar la portada</h3>
+
+                    <ul>
+                        <li>En el bloque de administración, haga click en 'Editar configuraciones'</li>
+                        <li>Cambie el nombre_completo y el nombre_corto en caso necesario. (El nombre corto se muestra en la Barra de navegación.)</li>
+                        <li>Decida como quiere Usted que se muestren los cursos y las novedades para los usuarios que ya ingresaron y para los que todavía no han ingresado. Esto podrá cambiarse después en cualquier momento. Usted puede elegir no mostrar nada de esta información.</li>
+                    </ul>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/2/2c/moodlecloudedit.png/500px-moodlecloudedit.png">
+
+
+                    <p>Para añadir imágenes y contenido al área central:</p>
+                    <ul>
+                        <li>Usted debe Activar la edición en el bloque de administración.</li>
+                        <li>Después hacer click en el ícono para configuración que se encuentra cerca de la parte superior de la pantalla. (Si Usted no ve este ícono, revise en Administración del sitio > Portada > Configuraciones d ela portada que esté activada la opción para 'Incluir una sección de tema/tópico').</li>
+                        <li>Añádale texto o imágenes a la caja del resumen.</li>
+                    </ul>
+                    <h3>Cambiar la apariencia de su sitio</h3>
+                    <ul>
+                        <li>Moodle viene con dos Temas estándar, llamados 'Clean' (Limpio) y 'More' (Más). Ambos funcionan bien en dispositivos móviles y en computadoras de escritorio, y el tema 'More' (Más) está diseñado para que sea fácilmente personalizable desde Administración del sitio > Apariencia > Temas > More.</li>
+                        <li>Descubra como añadir menúe sdesplegables, enlaces en el pie de página, Google Analytics y más en Apariencia del sitio.</li>
+                        <li>Si su instalación y su organización lo permiten, Usted puede instalar un tema personalizado. Vea Instalar plugins para los detalles.</li>
+                    </ul>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/9/96/ChangingTheLook.png/500px-ChangingTheLook.png">
+
+                    <h3>Añadir cursos</h3>
+                    <ul>
+                        <li>Los Cursos son las áreas de aprendizaje de Moodle, en donde los profesores y estudiantes trabajan juntos.</li>
+                        <li>Usted puede añadir un curso nuevo al hacer click en el botón para 'Añadir un curso nuevo' en la página de la Portada o mediante Administración del sitio > Cursos > Gestionar cursos y categorías.</li>
+                        <li>Si Usted planea tener muchos cursos, Usted puede Subir cursos masivamente mediante archivo CSV.</li>
+                    </ul>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/9/92/Courses.png/500px-Courses.png">
+                </div>
+
+                <div class="col-lg-8 col-lg-offset-2 tab-pane fade" id="guia-instalacion">
+                    <h1 class="title-doc">Guia de Instalacion</h1>
+
+                    <h3>Requerimientos básicos</h3>
+
+
+                    <ul>
+                        <li>Necesitará un servidor web en funcionamiento (p.ej. Apache), una base de datos (p.ej. MySQL, MariaDB o PostgreSQL) y tener PHP configurado. Vea las Notas de Moodle 2.7 (,o vea Historia de las versiones en otros casos) para los requisitos de software.</li>
+                        <li>Moodle requiere un cierto número de extensiones de PHP. Sin embargo, Moodle lo comprueba pronto durante el proceso de instalación y puedes solucionar el problema y reiniciar el guión de instalación si falta alguna extensión.</li>
+                        <li>Si quieres que Moodle envíe correo eléctronico (probablemente lo quieres), necesitas un Sendmail (Unix/Linux) funcionando en tu servidor o acceder a un servidor de correo SMTP.</li>
+                    </ul>
+
+                    <h3>Obtención de Moodle</h3>
+
+                    <p>Tiene dos opciones básicamente:</p>
+                    <ul>
+                        <li>Descargar la versión que necesitas desde <a target="_blank" href="http://moodle.org/downloads">http://moodle.org/downloads</a>... o</li>
+                        <li>Obtener el código del repositorio <a href="https://docs.moodle.org/all/es/Git">Git (recomendado para desarrolladores y además hace las actualizaciones muy simples):</a></li>
+                    </ul>
+                    <p>...esto trae una copia completa del repositorio Moodle y, a continuación, cambia a la rama estable 2.7. </p>
+                    <pre>git clone -b MOODLE_27_STABLE git://git.moodle.org/moodle.git 
+                    </pre>
+
+                    <h3>Crea una base de datos</h3>
+                    <ul>
+                        <li> Usando el servidor de bases de datos elegido, crea una nueva base de datos. La codificación por defecto debe ser UTF-8. Por ejemplo, usando MySQL:</li>
+                    </ul>
+                    <pre>CREATE DATABASE moodle DEFAULT CHARACTER SET UTF8 COLLATE utf8_unicode_ci;
+                    </pre>
+                    
+                    <ul>
+                        <li> Crea un usuario y contraseña con los permisos apropiados para la base de datos recién creada. Por ejemplo (con MySQL de nuevo):</li>
+                    </ul>
+                    <pre>mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES,DROP,INDEX,ALTER ON moodle.* TO moodleuser@localhost IDENTIFIED BY 'su_contraseña';
+                    </pre>
+                    
+                    <h3>Crea el directorio de datos</h3>
+                    <ul>
+                        <li>Crea un directorio vacio para contener los ficheros de Moodle. NO debe estar en el área servida por el servidor web y debe tener los permisos de manera que el usuario del servidor web pueda escribir en él. Típicamente, convierte al usuario de wervidor web en su propietario o dale al directorio permisos de escritura para 'todos'.</li>
+                        
+                    </ul>
+
+                    <h3>Instala el código de Moodle</h3>
+                    <ul>
+                        <li>Descomprime y mueve o copia el código de Moodle (obtenido anteriormente) de manera que pueda ser servido por el servidor web (p.ej. en Linux basados en Debian, coloca el código en /var/www/moodle)</li>
+                        <li>Comprueba los permisos y asegúrate de que el servidor web no tiene permisos para escribir sobre ninguno de los ficheros en los directorios del código de Moodle (una causa muy común de sitios que han sido pirateados).</li>
+                        <li> Si lo necesitas, configura tu servidor web para servir Moodle con la URL elegida.</li>
+                    </ul>
+
+                    <h3>Configura Moodle</h3>
+                    <ul>
+                        <li>En el directorio de Moodle, encuentra el fichero config-dist.php y cópialo sobre un nuevo fichero con el nombre config.php (pero lee el siguiente paso, 'Instala Moodle', primero).</li>
+                        <li>Edita config.php con tu editor favorito y cambia los valores apropiados que apuntan a tu sitio, directorios y base de datos. Nota: el guión de instalación de Moodle creará el fichero config.php por tí si no existe pero asegúrate de establecer después los permisos apropiados</li>
+                    </ul>
+
+                    <h3>Instala Moodle</h3>
+                    <ul>
+                        <li>Dirígete a la URL de tu sitio Moodle con un navegador (la instalación se completará automáticamente) o ejecuta la versión de línea de comando (requiere la version cli de PHP) en: </li>
+                    </ul>
+                    <pre>/usr/bin/php /path/to/moodle/admin/cli/install.php</pre>
+
+                    <p>La CLI creará el fichero config.php y no se ejecutará si lo creaste en el paso anterior.</p>
+
+                    <ul>
+                        <li>Tras la instalación asegúrate de que los permisos de tus ficheros son los correctos para los ficheros de Moodle (sin permisos de escritura para el servidor web) y el directorio de datos de Moodle (con permisos de escritura para el servidor web).</li>
+                    </ul>
+
+                    <h3>Monta el trabajo cron</h3>
+                    <ul>
+                        <li>Necesitarás ejecutar un trabajo cron periódicamente (para Moodle 2.7 y posteriores recomendamos que se corra cada minuto).. Una típica entrada cron en Unix será algo así:</li>
+                    </ul>
+                    <pre>* * * * *    /usr/bin/php /path/to/moodle/admin/cli/cron.php >/dev/null</pre>
+                </div>
+                <!--Finaliza instalacion-->
+                                <div class="col-lg-8 col-lg-offset-2 tab-pane fade" id="guia-instalacion">
+                    <h1 class="title-doc">Guia de Instalacion</h1>
+
+                    <h3>Requerimientos básicos</h3>
+
+                    <ul>
+                        <li>Necesitará un servidor web en funcionamiento (p.ej. Apache), una base de datos (p.ej. MySQL, MariaDB o PostgreSQL) y tener PHP configurado. Vea las Notas de Moodle 2.7 (,o vea Historia de las versiones en otros casos) para los requisitos de software.</li>
+                        <li>Moodle requiere un cierto número de extensiones de PHP. Sin embargo, Moodle lo comprueba pronto durante el proceso de instalación y puedes solucionar el problema y reiniciar el guión de instalación si falta alguna extensión.</li>
+                        <li>Si quieres que Moodle envíe correo eléctronico (probablemente lo quieres), necesitas un Sendmail (Unix/Linux) funcionando en tu servidor o acceder a un servidor de correo SMTP.</li>
+                    </ul>
+
+                    <h3>Obtención de Moodle</h3>
+
+                    <p>Tiene dos opciones básicamente:</p>
+                    <ul>
+                        <li>Descargar la versión que necesitas desde <a target="_blank" href="http://moodle.org/downloads">http://moodle.org/downloads</a>... o</li>
+                        <li>Obtener el código del repositorio <a href="https://docs.moodle.org/all/es/Git">Git (recomendado para desarrolladores y además hace las actualizaciones muy simples):</a></li>
+                    </ul>
+                    <p>...esto trae una copia completa del repositorio Moodle y, a continuación, cambia a la rama estable 2.7. </p>
+                    <pre>git clone -b MOODLE_27_STABLE git://git.moodle.org/moodle.git 
+                    </pre>
+
+                    <h3>Crea una base de datos</h3>
+                    <ul>
+                        <li> Usando el servidor de bases de datos elegido, crea una nueva base de datos. La codificación por defecto debe ser UTF-8. Por ejemplo, usando MySQL:</li>
+                    </ul>
+                    <pre>CREATE DATABASE moodle DEFAULT CHARACTER SET UTF8 COLLATE utf8_unicode_ci;
+                    </pre>
+                    
+                    <ul>
+                        <li> Crea un usuario y contraseña con los permisos apropiados para la base de datos recién creada. Por ejemplo (con MySQL de nuevo):</li>
+                    </ul>
+                    <pre>mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES,DROP,INDEX,ALTER ON moodle.* TO moodleuser@localhost IDENTIFIED BY 'su_contraseña';
+                    </pre>
+                    
+                    <h3>Crea el directorio de datos</h3>
+                    <ul>
+                        <li>Crea un directorio vacio para contener los ficheros de Moodle. NO debe estar en el área servida por el servidor web y debe tener los permisos de manera que el usuario del servidor web pueda escribir en él. Típicamente, convierte al usuario de wervidor web en su propietario o dale al directorio permisos de escritura para 'todos'.</li>
+                        
+                    </ul>
+
+                    <h3>Instala el código de Moodle</h3>
+                    <ul>
+                        <li>Descomprime y mueve o copia el código de Moodle (obtenido anteriormente) de manera que pueda ser servido por el servidor web (p.ej. en Linux basados en Debian, coloca el código en /var/www/moodle)</li>
+                        <li>Comprueba los permisos y asegúrate de que el servidor web no tiene permisos para escribir sobre ninguno de los ficheros en los directorios del código de Moodle (una causa muy común de sitios que han sido pirateados).</li>
+                        <li> Si lo necesitas, configura tu servidor web para servir Moodle con la URL elegida.</li>
+                    </ul>
+
+                    <h3>Configura Moodle</h3>
+                    <ul>
+                        <li>En el directorio de Moodle, encuentra el fichero config-dist.php y cópialo sobre un nuevo fichero con el nombre config.php (pero lee el siguiente paso, 'Instala Moodle', primero).</li>
+                        <li>Edita config.php con tu editor favorito y cambia los valores apropiados que apuntan a tu sitio, directorios y base de datos. Nota: el guión de instalación de Moodle creará el fichero config.php por tí si no existe pero asegúrate de establecer después los permisos apropiados</li>
+                    </ul>
+
+                    <h3>Instala Moodle</h3>
+                    <ul>
+                        <li>Dirígete a la URL de tu sitio Moodle con un navegador (la instalación se completará automáticamente) o ejecuta la versión de línea de comando (requiere la version cli de PHP) en: </li>
+                    </ul>
+                    <pre>/usr/bin/php /path/to/moodle/admin/cli/install.php</pre>
+
+                    <p>La CLI creará el fichero config.php y no se ejecutará si lo creaste en el paso anterior.</p>
+
+                    <ul>
+                        <li>Tras la instalación asegúrate de que los permisos de tus ficheros son los correctos para los ficheros de Moodle (sin permisos de escritura para el servidor web) y el directorio de datos de Moodle (con permisos de escritura para el servidor web).</li>
+                    </ul>
+
+                    <h3>Monta el trabajo cron</h3>
+                    <ul>
+                        <li>Necesitarás ejecutar un trabajo cron periódicamente (para Moodle 2.7 y posteriores recomendamos que se corra cada minuto).. Una típica entrada cron en Unix será algo así:</li>
+                    </ul>
+                    <pre>* * * * *    /usr/bin/php /path/to/moodle/admin/cli/cron.php >/dev/null</pre>
+
+                </div>
+
+                <div class="col-lg-8 col-lg-offset-2 tab-pane fade" id="estudiantes">
+                    <h1 class="title-doc">Añadir estudiantes</h1>
+
+                    <h3>Los estudiantes se inscriben ellos mismos</h3>
+
+                    <p>Si está habilitada la Auto inscripción entonces los estudiantes pueden apuntarse ellos mismos a los cursos. El profesor puede limitar la inscripción (matriculación) a aquellos a quienes se les haya dado una Clave de inscripción y, si fuera necesario, a un empleado miembro del 'staff' se le puede dar el rol de Porta-clave (keyholder) para gestionar las claves de inscripción.</p>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/b/b9/selfenrolment.png/500px-selfenrolment.png">
+
+                    <h3>Los profesores inscriben manualmente a los estudiantes</h3>
+                    <p>Si está habilitada la Inscripción manual (y usualmente si lo está), entonces los profesores pueden añadir estudiantes a sus cursos desde Administración del curso > Usuarios > Usuarios inscritos. </p>
+
+                    <h3>Pagando los cursos</h3>
+                    <ul>
+                        <li>Si el administrador ha habilitado el método para Inscripción por Paypal para todo el sitio y lo ha habilitado en los cursos, entonces el profesor puede configurar un precio para el curso.</li>
+                        <li>Tome nota de que los estudiantes todavía necesitarán tener cuentas en el sitio antes de que puedan pagar por un curso.</li>
+                        <li>Sea cauteloso si tiene habilitada la Auto inscripción en su curso además de Paypal; si Usted no configura una Clave de inscripción con el método de Auto inscripción, entonces los estudiantes podrían acceder al curso sin pagarlo.</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 tab-pane fade" id="monitorear">
+                    <h1 class="title-doc">Monitorear el Progreso</h1>
+
+                    <h3>Calificaciones</h3>
+                    <p>Cada curso tiene su propio Libro de calificaciones el cual es accesible desde Administración del curso > Calificaciones. Algunas Actividades como tarea y examen envían calificaciones de regreso a este Libro de calificaciones. También es posible que los profesores escriban directamente las calificaciones dentro del Libro de calificaciones.</p>
+
+                    <h3>Competencias</h3>
+                    <p>Las Competencias describen el nivel de comprensión o pericia de un alumno en algunas habilidades relacionadas-con-el-tema. La Educación Basada en Competencias ( Competency-based education = CBE ), también conocida como 'Aprendizaje basado en competencias' o 'Aprendizaje basado en habilidades', se refiere a sistemas de evaluación y calificación en donde los estudiantes demuestran estas competencias. </p>
+
+                    <h3>Finalización de actividad</h3>
+                    <p>Si la Finalización de actividad es habilitada por un administrador y en las configuraciones del curso, los profesores pueden indicar para cada ítem del curso como es que desean que se registre cuando esté completo. Aparcerá una casilla de verificación contra de la actividad. Los estudiantes pueden, una de dos, marcarla manualmente como completada, o el ítem puede ser registrado automáticamente una vez que el estudiante satizfaga los criterios especificados. estos pueden ser: ver un Recurso, enviaruna Tarea, publicar en un foro u otras condiciones. El profesor puede ver una vista general de quien ha completado que en el reporte de finalización de la actividad en Administración del curso > Reportes > Finalización de actividad . </p>
+
+                    <h3>Finalización del curso</h3>
+                    <p>Como una extension de actividad complementaria, habilitar la Finalizacion del curso permite que este sea oficialmente marcado como finalizado, ya sea manual o automaticamente de acuerdo a los criterios especificados. Si el Bloque de estatus de finalizacion de el curso se agrega, los estudiantes pueden ver sus progresos durante el curso. Los profesores pueden ver todo el progreso de los estudiantes hacia la finalizacion del cirso desde administracion del Curso>Reportes>Finalizacion del curso.</p>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/c/cb/studentviewcoursecompletionreport.png/300px-studentviewcoursecompletionreport.png">
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 tab-pane fade" id="subir">
+                    <h1 class="title-doc">Subir archivos</h1>
+
+                    <h3>Trabajando con archivos</h3>
+                    <p>Moodle proporciona una manera fácil para que un profesor le presente materiales a sus estudiantes. Estos materiales toman la forma de archivos, como los documentos de procesadores de texto o presentaciones de imágenes. Los materiales pueden mostrarse en la página, ya sea como ítems individuales o agrupados dentro de carpetas. Un profesor podría, por ejemplo, desear compartir solamente un documento para investigación en formato PDF; otro profesor podría tener una carpeta de exámenes antiguos a manera de ejemplos para que los descarguen los estudiantes. </p>
+                    <ul>
+                        <li>La mayoría de los tipos de archivos pueden subirse a Moodle y ser accesados en Moodle, pero el estudiante debe de tener el programa apropiado para poder abrirlos.</li>
+                    </ul>
+
+                    <p>Para añadirle archivos a un sitio Moodle, Usted debe asegurarse primero de tener activada la edición.</p>
+
+                    <h3>Arrastrar y soltar</h3>
+                    <ul>
+                        <li>Si Usted está usando un navegador de Internet moderno, puede simplemente hacer click, mantener presionado el botón izquierdo del ratón, arrastrar y soltar el archivo directamente en la página del curso. Usted sabrá que si está desponible la característica de arrastrar y soltar debido a que brevemente aparecerá un mensaje que así lo indica en la parte superior de su pantalla:</li>
+                    </ul>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/a/a3/dragdropmessage.png">
+
+                    <p>Para arrastrar y soltar una carpeta, Usted debe primeramente comprimirla/zipearla usando el programa que para tal función tenga su computadora. </p>
+
+                    <h3>Añadir un recurso o actividad</h3>
+                    <ul>
+                        <li>    En lugar de arrastrar y soltar, Usted puede hacer click en el enlace para 'Añadir una actividad o recurso' y entonces seleccionar, ya sea un Archivo o una Carpeta del Selector de actividad (o elegir desde el menú desplegable para 'Añadir un recurso', en caso de que estuviera presente dicho menú.</li>                        
+                    </ul>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/b/b1/filefolder23.png/300px-filefolder23.png">
+                    <ul>
+                        <li>La pantalla para subir y mostrar un archivo (o carpeta de archivos) incluye un botón "agregar". Hacer click en este botón le llevará al Selector de archivos, que es el nombre dado al área de almacenamiento y acceso de archivos dentro de Moodle. Puede ver más acerca de subir o agregar archivos en la página Selector de archivos.</li>
+                        <li>Hay también un bloque (con una flecha) a la que se puede arrastrar un archivo directamente desde su escritorio en Moodle (esta opción no está disponible en algunas versiones de Internet Explorer).</li>
+                    </ul>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/2/2e/newdraganddrop.png/300px-newdraganddrop.png">
+
+                    <h3>Viendo los archivos subidos</h3>
+                    <ul>
+                        <li> Una vez subidos, los archivos aparecen como miniaturas en el administrador de archivos para un más fácil reconocimiento.</li>
+                        <li> Se puede alternar fácilmente entre vista de iconos o vista de tabla con tamaños y fechas, en forma de lista jerárquica.</li>
+                    </ul>
+                    <img class="image-bottom" src="https://docs.moodle.org/all/es/images_es/thumb/e/e0/truthumbnailsiconsview.png/300px-truthumbnailsiconsview.png">
+
+                    <h3>Editando o actualizando los archivos subidos</h3>
+                    <ul>
+                        <li>    Hacer click en el nombre de un archivo subido abre un cuadro de diálogo en ventana emergente que permite modificar rápidamente detalles del archivo.</li>
+                    </ul>
+                    <img class="image-bottom" style="position: center;" src="https://docs.moodle.org/all/es/images_es/thumb/6/6a/popupdialogue.png/300px-popupdialogue.png">
+                </div>
+                <!--Finaliza Gestionar curso-->
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>

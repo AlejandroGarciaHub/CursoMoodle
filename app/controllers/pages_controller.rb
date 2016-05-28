@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	layout false, only: [:elearning,:moodle]
+	#layout false, only: [:moodle, :elearning]
 
  def elearning
   end

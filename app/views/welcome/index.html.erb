@@ -15,57 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
-<body id="page-top" class="index">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Curso Moodle</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Documentacion</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#acerca">Unete</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                    <li >
-                        <a class="btn-connect" >Conectar</a>
-                    </li>
-                    <li >
-                        <a class="btn-signup" >Registrarme</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-
-    <!-- Header -->
+<body id="page-top">
+<%= render "partials/navigation"%>
     <header>
         <div class="container">
             <div class="row">
@@ -95,30 +47,30 @@
                 <%= link_to page_path('elearning.html'), :class=>"portfolio-link"  do %>
                                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"><p><h3>Conoce el e-learning</h2></p></i>
+                                <i class="fa fa-search-plus fa-3x"><p><h3>Conoce el e-learning</h3></p></i>
                             </div>
                         </div>
-                        <img src="img/resources/1.jpg" class="img-responsive top-image" alt=""><p><h3 class="center">¿e-learning?</h2></p>
+                        <img src="img/resources/1.jpg" class="img-responsive top-image" alt=""><p><h3 class="center">¿e-learning?</h3></p>
 					<%end%>
                 </div>
                 <div class="col-sm-4 portfolio-item block-color-fondo">
-                    <a href="#moodle" class="portfolio-link" data-toggle="modal">
+                	<%= link_to page_path('moodle.html'), :class=>"portfolio-link"  do %>
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"><p><h3>Conoce Moodle</h2></p></i>
+                                <i class="fa fa-search-plus fa-3x"><p><h3>Conoce Moodle</h3></p></i>
                             </div>
                         </div>
-                        <img src="img/resources/2.jpg" class="img-responsive top-image" alt=""><p><h3 class="center">Conoce Moodle</h2></p>
-                    </a>
+                        <img src="img/resources/2.jpg" class="img-responsive top-image" alt=""><p><h3 class="center">Conoce Mooddle</h3></p>
+					<%end%>
                 </div>
                 <div class="col-sm-4 portfolio-item block-color-fondo">
                     <a href="#porque" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"><p><h3 >¿Por que moodle?</h2></p></i>
+                                <i class="fa fa-search-plus fa-3x"><p><h3>¿Por que moodle?</h3></p></i>
                             </div>
                         </div>
-                        <img src="img/resources/3.jpg" class="img-responsive top-image" alt=""><p><h3 class="center">¿Por que Moodle?</h2></p>
+                        <img src="img/resources/3.jpg" class="img-responsive top-image" alt=""><p><h3 class="center">¿Por que Moodle?</h3></p>
                     </a>
                 </div>
             </div>
@@ -202,8 +154,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
+        <footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
