@@ -43,21 +43,26 @@ $(document).on('page:change',function() {
       }
   }
   
-  $('[data-toggle="offcanvas"]').click(function () {
-        $('#wrapper').toggleClass('toggled');
-  });  
-
-   $(".enlace a").click(function(){
-        $(this).tab('show');
-    });
-
-  $('li').hover(function(){
-      $(this).children('ul').stop().slideToggle(400);
-  });
 
 });
 
 
+$(document).on('page:change',function() {
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+$(document).on('page:change',function() {
+   $(".enlace a").click(function(){
+        $(this).tab('show');
+    });
+});
+
+$(document).on('page:change',function() {
+  $('li').hover(function(){
+      $(this).children('ul').stop().slideToggle(400);
+  });
+});
 
 
 /*!
