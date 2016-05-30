@@ -22,8 +22,11 @@
   </colgroup>
   <thead >
     <tr>
-      <th class="center-xs">Lista de examenes</th>
-      <th></th>
+    <%if @question_groups.any?%>
+          <th class="center-xs">Lista de examenes</th>
+    <%else%>
+        <th class="center-xs">Al parecer no hay examenes dispoibles, espera a que tu asesor coloque alguno!</th>
+    <%end%>
     </tr>
   </thead>
   <tbody>
