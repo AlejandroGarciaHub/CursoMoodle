@@ -6,7 +6,4 @@ class User < ActiveRecord::Base
 
   def permission_level=(permission_level)
   end
-  def permission_level
-    permission_level="2"
-  end
 end
