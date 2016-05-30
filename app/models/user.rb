@@ -5,9 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   def permission_level=(permission_level)
-    permission_level="2" 
   end
   def permission_level
-    permission_level="2" 
+    permission_level="1" 
   end
 end
