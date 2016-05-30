@@ -25,6 +25,10 @@
     <%= f.password_field :password_confirmation, autocomplete: "off", class:"log-form-controll" %>
   </div>
 
+  <div class="field">
+    <%= f.hidden_field :permission_level%><br />
+  </div>
+
   <div class="actions">
     <%= f.submit "Registrar", class:"btn cream green" %>
   </div>

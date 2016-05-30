@@ -1,0 +1,28 @@
+<tr id= "question_group_<%= question_group.id %>">
+  <td>
+    <% if can_administer? %>
+      <%= link_to question_group.name, question_group_questions_path(question_group), class:"exam-title" %>
+    <% else %>
+      <%= question_group.name %>
+    <% end %>
+                    <hr>
+
+  </td>
+
+  <td>
+    <ul class="horizontal-list" style="margin-top:2em;">
+                  <hr>
+<!--My problem-->
+          <%unless current_user.permission_level.to_i==2%>
+             <li><%= link_to "Responder", new_question_group_answer_group_path(question_group) %></li>         
+          <%end%>
+
+      <% if can_administer? %>
+        <li><%= link_to "Resultados", [:results, question_group], class:"btn blue" %></li>
+        <li><%= link_to "Eliminar", [question_group], method: :delete, class:"btn be-red white", style:"margin-top:1em;" %></li>
+      <% end %>
+    </ul>
+
+  </td>
+</tr>
+

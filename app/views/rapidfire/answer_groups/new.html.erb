@@ -1,0 +1,19 @@
+<div style="margin-top:150px;">
+
+<div class="center-xs">
+	
+<h2>Responde: <%=@question_group.name%></h2>
+<hr/>
+
+<%= form_for([@question_group, @answer_group_builder]) do |f| %>
+  <%- @answer_group_builder.answers.each do |answer| %>
+    <%= f.fields_for("#{answer.question.id}", answer) do |answer_form| %>
+    <div style="margin-bottom:3em; font-size:1.2em;">
+      <%= render_answer_form_helper(answer, answer_form) %>
+    </div>
+    <% end %>
+  <% end %>
+  <%= f.submit "Guardar", style:"margin-bottom:1em;" %>
+<% end %>
+</div>
+</div>

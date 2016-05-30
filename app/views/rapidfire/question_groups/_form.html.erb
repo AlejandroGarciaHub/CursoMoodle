@@ -1,0 +1,27 @@
+<div style="margin-top:150px;">
+
+<div class="center-xs">
+  
+<h3><%= question_group.new_record? ? "Nuevo Examen" : "Editar Examen" %></h3>
+
+<%= form_for question_group do |f| %>
+  <%- if question_group.errors.any? %>
+    <ul>
+      <%- question_group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <div class="actions">    
+  <%= f.label :name, "Nombre" %>
+  <%= f.text_field :name %>
+    </div>
+    <div class="actions">
+  <%= f.submit "Crear examen", style:"margin-top:2em;margin-bottom:2em;" %>      
+    </div>
+<% end %>
+  
+</div>
+</div>
+<%= render "partials/footer_above" %>

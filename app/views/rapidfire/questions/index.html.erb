@@ -1,0 +1,31 @@
+<div style="margin-top:150px;">
+  
+<div class="center-xs">
+    <h2>
+  Preguntas <%=@question_group.name%>
+  <% if can_administer? %>
+    <a class="btn orange white" style="margin-left:60%;" href="questions/new">Nueva pregunta</a>
+<!--        <%= link_to "Nueva Pregunta", new_question_group_question_path(@question_group) %> -->
+  <% end %>
+</h2>
+
+  </div>
+<hr/>
+<table style="margin-left:25%;">
+  <colgroup>
+    <col>
+    <col width="20%">
+  </colgroup>
+  <thead >
+    <tr>
+      <th class="center-xs">Preguntas</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <%= render partial: "question", collection: @questions%>
+  </tbody>
+</table>
+</div>
+<%= render "partials/footer_above" %>

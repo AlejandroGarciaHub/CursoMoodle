@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
 	#layout false, only: [:moodle, :elearning]
 
- def elearning
+	  before_action :authenticate_user!, except: [:moodle,:elearning]
+
+ def show
   end
 
-  def moodle
-  end
 end

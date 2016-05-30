@@ -1,0 +1,35 @@
+  <div style="margin-top:150px; width:80%; margin:1 auto;">
+    
+  <div class="center-xs">
+    <h2>
+  Examenes
+  <% if can_administer? %>
+    <a class="btn orange white" style="margin-left:60%;" href="cuestionarios/question_groups/new">Nuevo examen</a>
+<!--      <%= link_to "Nuevo examen", new_question_group_path %> -->
+  <% end %>
+</h2>
+
+  </div>
+<hr/>
+<%if can_administer?  %>
+  <table style="margin-left:30%;">
+<%else%>
+  <table style="margin-left:35%;">
+<%end%>
+  <colgroup>
+    <col>
+    <col width="20%">
+  </colgroup>
+  <thead >
+    <tr>
+      <th class="center-xs">Lista de examenes</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <%= render partial: "question_group", collection: @question_groups%>
+  </tbody>
+</table>
+</div>
+<%= render "partials/footer_above" %>

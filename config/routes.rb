@@ -1,13 +1,20 @@
 Rails.application.routes.draw do
+
+  get 'course/index',:path =>"curso"
+
   devise_for :users
+
+  resources :users
   get 'welcome/index'
 
 HighVoltage.configure do |config|
   config.content_path = 'doc/'
 end
 
+ mount Rapidfire::Engine => "/cuestionarios"
+
 get '/elearning' => 'doc#elearning', :path => "elearning"
-get '/moodle' => 'doc#moodle'
+get '/moodle' => 'doc#moodle', :path => "moodle"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -23,6 +23,52 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+
+.cantidad{
+background-color:#A8C545;
+ width:12%;
+ margin-left:44%;
+ border-radius: 5px;
+}
+
+ h5.preguntas{
+  font-size:17px;
+  margin-top: 2em;
+ }
+
+ .orange{
+  background-color: #FF564C !important;
+}
+a.white, .white{
+  color: #F9F9FB;
+}
+.be-red {
+  background-color: #C12C42 !important;
+}
+
+.green2 {
+  background-color: #A8C545 !important;
+}
+.green{
+  background-color: #6B8D7C !important;
+}
+.blue{
+  background-color: #037E8C !important;
+}
+.green-color{
+  color: #6B8D7C;
+}
+
+ul
+{
+list-style-type: none;
+}
+
+.exam-title{
+  font-size: 15px;
+}
+
  #footer{
     clear: both;
     position: relativeab;
@@ -818,3 +864,5 @@ footer .footer-below {
   opacity: 0;
   display: none;
 }
+
+

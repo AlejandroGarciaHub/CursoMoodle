@@ -20,6 +20,12 @@
 
 
 $(document).on('page:change',function() {
+
+  $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+});
+  
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
      isClosed = false;

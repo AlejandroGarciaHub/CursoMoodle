@@ -1,0 +1,44 @@
+<div style="margin-top:150px; width:95%; margin:1 auto;">
+
+  <div class="center-xs">
+
+<%- @question_group_results.each do |result| 
+  @result=result.question.question_group.name
+end%>
+<h1 style="margin-bottom:4%;" class="green-color" >Resultados <%=@result%>
+</h1>
+
+<%- @question_group_results.each_with_index do |result,index| %>
+  <div style="margin-bottom:4%;">
+    <h5 class="preguntas">  <%=index+1%>. <%= result.question.question_text %></h5>
+      <%- if result.results.is_a?(Array) %>
+      <div>
+          <%- result.results.each_with_index do |answer,index| %>
+          <div>
+            <strong><%=index+1%>.</strong>   <%=answer %>
+            </div>
+          <% end %>
+      </div>
+      <% elsif result.results.is_a?(Hash) %>
+        <table>
+          <thead>
+            <div class="center-xs cantidad">
+              Cantidad<a style="margin-left:2%;"></a> || 
+              Opcion              
+            </div>
+          </thead>
+          <tbody>
+            <%- result.results.each do |option, count| %>
+              <div class="center-xs">
+                <strong style="margin-right:5%;"><%= count %></strong>
+                <%= option %>
+              </div>
+            <% end %>
+          </tbody>
+        </table>
+      <% end %>
+  </div>
+<% end %>
+</div>
+</div>
+<%= render "partials/footer_above" %>

@@ -1,0 +1,63 @@
+<div style="margin-top:150px;">
+  
+
+<div class="center-xs">
+  
+<h3>Pregunta</h3>
+
+<%= form_for form, as: :question, url: url, method: method do |f| %>
+  <%- unless form.errors.empty? %>
+    <ul>
+      <%- form.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<div class="actions">
+    <%= f.label :type, "Tipo" %>
+  <%= f.select :type, ::Rapidfire::QuestionForm::QUESTION_TYPES, {}, id: "question_type" %>  
+</div>
+
+<div class="actions">
+  <%= f.label :question_text,"Texto pregunta" %><br>
+  <%= f.text_field :question_text, style:"width:30%;" %>
+</div>
+<div class="actions">
+  <%= f.label :answer_options, "Opciones de pregunta" %><br>
+  <%= f.text_area :answer_options, rows: 5, placeholder:"Una respuesta por linea",style:"height: 150px; width:250px;" %>
+</div>
+
+
+
+
+  <h4>Otras opciones</h4>
+  <hr/>
+
+  <div class="actions">
+  <%= f.label :answer_presence, "Respuesta obligatoria" %>
+  <%= f.check_box :answer_presence %>
+  </div>
+
+  <div class="actions">
+  <%= f.label :answer_minimum_length, "Numero minimo caracteres" %><br>
+  <%= f.text_field :answer_minimum_length, style:"width:5%;" %>
+  </div>
+
+  <div class="actions">
+  <%= f.label :answer_maximum_length, "Numero maximo caracteres" %><br>
+  <%= f.text_field :answer_maximum_length, style:"width:5%;" %>
+  </div>
+
+  <div class="actions">
+  <%= f.label :answer_greater_than_or_equal_to, "Cantidad de caracteres igual o mayor que" %><br>
+  <%= f.text_field :answer_greater_than_or_equal_to, style:"width:5%;" %>
+  </div>
+
+  <div class="actions">
+  <%= f.label :answer_less_than_or_equal_to, "Cantidad de caracteres igual o menor que" %><br>
+  <%= f.text_field :answer_less_than_or_equal_to, style:"width:5%;" %>
+  </div>
+
+  <%= f.submit submit_text, style:"margin-top:2em;margin-bottom:2em;" %>
+<% end %>
+</div></div>

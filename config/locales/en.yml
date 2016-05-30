@@ -20,4 +20,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      question:
+        question_text: "Texto pregunta"
+    errors:
+      models:
+        question:
+          attributes:
+            question_text:
+              blank: "no puede estar en blanco"

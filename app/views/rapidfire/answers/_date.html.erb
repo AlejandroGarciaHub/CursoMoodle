@@ -1,0 +1,10 @@
+<%= render partial: "rapidfire/answers/errors", locals: {answer: answer} %>
+
+<div class="actions">
+<%= f.label :answer_text, answer.question.question_text %>
+	
+</div>
+
+<div class="actions">
+<%= f.text_field :answer_text %>	
+</div>
