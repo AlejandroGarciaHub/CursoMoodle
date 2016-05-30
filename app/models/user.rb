@@ -8,6 +8,6 @@ class User < ActiveRecord::Base
   		true
   	end
   def permission_level=(permission_level)
-    permission_level="1" 
+    permission_level="2" 
   end
 end
