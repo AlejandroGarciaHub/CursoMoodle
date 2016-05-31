@@ -18,6 +18,12 @@ class ApplicationController < ActionController::Base
 	#      current_user.try(:admin?)
   end
 
+  def show
+    @answers=ActiveRecord::Base.transaction do
+      ActiveRecord::Base.connection.execute("select* from rapidfire_answer_groups")
+    end
+  end
+
 	protected
    def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:name, :email, :password, :password_confirmation, :remember_me,:permission_level) }

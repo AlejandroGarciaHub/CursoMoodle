@@ -25,6 +25,18 @@ $(document).on('page:change',function() {
         e.preventDefault();
         $("#wrapper").toggleClass("active");
 });
+
+  setTimeout(function(){
+    // Show our element, then call our callback
+    $(".hidden_element").show(function(){
+        // Find the iframes within our newly-visible element
+        $(this).find("iframe").prop("src", function(){
+            // Set their src attribute to the value of data-src
+            return $(this).data("src");
+        });
+    });
+//    $("p").remove();
+}, 5000);
   
   var trigger = $('.hamburger'),
       overlay = $('.overlay'),
