@@ -8,13 +8,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def can_administer?
-  	if current_user.nil?
-  		redirect_to root_url
-  	elsif current_user.permission_level==2
+  	if current_user.permission_level==2
   		true
   	else
 	  	false
-	end
+  	end
 	#      current_user.try(:admin?)
   end
 
