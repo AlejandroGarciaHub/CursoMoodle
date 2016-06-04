@@ -8,4 +8,8 @@ class User < ActiveRecord::Base
   def permission_level=(permission_level)
   end
 
+  def set_answer_groups
+  	@answer_groups=AnswerGroup.all
+  end
+
 end

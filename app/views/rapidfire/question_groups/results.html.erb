@@ -16,6 +16,12 @@ end%>
           <%- result.results.each_with_index do |answer,index| %>
           <div>
             <strong><%=index+1%>.</strong>   <%=answer %>
+            <% @answers.each do |answerSame|%>
+              <%if answerSame.answer_text==answer%>
+                <%=answerSame.answer_group.user.email%>
+                <%break%>
+              <%end%>
+            <%end%>
             </div>
           <% end %>
       </div>
@@ -32,6 +38,12 @@ end%>
               <div class="center-xs">
                 <strong style="margin-right:5%;"><%= count %></strong>
                 <%= option %>
+                <% @answers.each do |answerSame|%>
+                  <%if answerSame.answer_text==option%>
+                    <%=answerSame.answer_group.user.email%>
+                    <%break%>
+                  <%end%>
+                <%end%>
               </div>
             <% end %>
           </tbody>
